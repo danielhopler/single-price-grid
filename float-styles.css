@@ -1,3 +1,44 @@
+/* Table of Contents :
+    1. reset - Eric Meyer's variant
+    2. global styles - font-family, font-size
+    3. site defaults - basic tags, headings, links, etc.
+    4. Shell - styles out layer of page - ( in this case, the .card container
+    5. Layout - page layout top down
+    6. Sections - individual elements top down
+*/
+    
+
+        /***  reset code ***/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+        /***  global styles ***/
+
+body {
+    background: hsl(218, 22%, 85%);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -5,152 +46,62 @@ html {
     box-sizing: inherit;
 }
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+
+        /***  site defaults ***/
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Karla', sans-serif;
-    background:hsl(204, 43%, 93%);
-    
+h2 {
+    font-size: 1.5rem;
 }
 
-.container {
-    max-width: 900px;
-    margin: 100px auto;
-    box-shadow: 0 2px 4px 2px rgba(87, 79, 79, 0.2);
-    transition: 0.3s;
-    border-radius: 12px;
+p {
+    font-size: 16px;
 }
+
+ul {
+    list-style-type: none;
+}
+
+       /***  Shell ***/
+
+.card {
+    max-width: 1000px;
+    margin: 8% auto;
+
+}
+
+
+       /***  Layout ***/
 
 header {
-    background: white;
+    background: #FFF;
     width: 100%;
-    padding: 50px;
-    letter-spacing: 1px;
-    border-radius: 12px;
+    padding: 5%;
 }
 
-header h1 {
-    color: hsl(179, 62%, 43%);
-    font-weight: 700;
-}
-
-header h3 {
-    color: hsl(71, 73%, 54%);
-    font-size: 1.4rem;
-    font-weight: 700;
-}
-
-
-
-header p {
-    font-size: 1.1rem;
-    line-height: 1.5rem;
-    color: hsl(218, 22%, 67%);
-    
-}
-
-section {
+.section {
     background: hsl(179, 62%, 43%);
-    color: white;
-   
+    width: 50%;
+    padding: 5%;
 }
 
-aside {
-    background: hsl(178, 62%, 49%);
-    color: white;
-   
+.aside {
+    background: hsl(179, 62%,48%);
+    width: 50%;
+    padding: 5%;
 }
 
-aside ul {
-    list-style-type:none;
-    margin-left: -40px;
-    padding-bottom: 40px;
-    line-height: 30px;
 
-}
+       /***  Sections ***/
 
-.button {
-    font-size: 16px;
-    font-weight: 700;
-    margin: 20px ;
-    background: hsl(71, 73%, 54%);
-    border-radius: 5px;
-    height: 50px;
-    width: 240px;
-    color: #FFF;
-}
-
-/* One True Layout method for equal height columns  */
-#one-true { 
-    overflow: hidden;
-    border-radius: 0 0 12px 12px;
-}
-
-#one-true .col {
-    width:50%;
-    padding: 40px 0 0 50px;
-    float: left;
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
-}
-
-#one-true .col:nth-child(1) {background: hsl(179, 62%, 43%);}
-
-#one-true .col:nth-child(2) {background: hsl(179, 62%, 48%);}
+       /*** Header ***/
 
 
-@media (max-width: 700px) {
+       /*** Section ***/
 
-    header p br { content: ' '; }
-    
-    header { border-radius: 12px;}
-    
-    #one-true .col {
-        width:100%;
-        float:none;
-        margin-bottom: 0;
-        padding-bottom: 50px;
-    }
 
-}
-
-/*
-# Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-Cyan: hsl(179, 62%, 43%)
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Cyan: hsl(179, 62%, 43%)
-- Bright Yellow: hsl(71, 73%, 54%)
-
-### Neutral
-
-- Light Gray: hsl(204, 43%, 93%)
-- Grayish Blue: hsl(218, 22%, 67%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 16px
-
-### Font
-
-- Family: [Karla](https://fonts.google.com/specimen/Karla)
-- Weights: 400, 700
-
-*/
+       /*** Aside ***/

@@ -60,3 +60,6 @@ Float
 - Sticky - stays in its initial spot until you scroll the page, then it becomes fixed, when the value in the offset property has been met.
 
 -Static Position - default value. Not needed to specify unless you are overriding another position.
+
+
+*** DEALING WITH FLOAT AND EQUAL COLUMN HEIGHT >>>>>>>>    One True Layout Method (See on CSS-Tricks.com/fluid-width-equal-height-columns)

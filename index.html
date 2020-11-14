@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="float-styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
@@ -16,31 +16,33 @@
   </style>
 </head>
 <body>
-  <div class="container clearfix">
+  <div class="container">
     <header>
-      <h1>Join our community</h1>
+      <h1 class="tag">Join our community</h1>
       <h3>30-day, hassle-free money back guarantee</h3>
-      <p>Gain access to our full library of tutorials along with expert code reviews.</p> 
-      <p>Perfect for any developers who are serious about honing their skills.</p>
+      <p>Gain access to our full library of tutorials along with expert code reviews. <br>
+      Perfect for any developers who are serious about honing their skills.</p>
     </header>
-    <section>
-      <h3>Monthly Subscription</h3>
-      <p><em>&dollar;</em>29 per month</p>
-      <p>Full access for less than &dollar;1 a day</p>
-      <button>Sign Up</button>
-    </section>
-    <aside>
-     <h3>Why Us</h3>
-      <ul>
-        <li>Tutorials by industry experts</li>
-        <li>Peer &amp; expert code review</li>
-        <li>Coding exercises</li>
-        <li>Access to our GitHub repos</li>
-        <li>Community forum</li>
-        <li>Flashcard deck</li>
-        <li>New videos every week</li>
-      </ul>
-    </aside>
+    <div id="one-true" class="clearfix">
+      <section class="col">
+        <h2>Monthly Subscription</h2>
+        <p><em>&dollar;</em>29 per month</p>
+        <p>Full access for less than &dollar;1 a day</p>
+        <button class="button">Sign Up</button>
+      </section>
+      <aside class= "col">
+      <h2>Why Us</h2>
+        <ul>
+          <li>Tutorials by industry experts</li>
+          <li>Peer &amp; expert code review</li>
+          <li>Coding exercises</li>
+          <li>Access to our GitHub repos</li>
+          <li>Community forum</li>
+          <li>Flashcard deck</li>
+          <li>New videos every week</li>
+        </ul>
+      </aside>
+    </div>
   </div>
 
   

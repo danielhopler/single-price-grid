@@ -34,7 +34,7 @@ time, mark, audio, video {
         /***  global styles ***/
 
 body {
-    background: hsl(218, 22%, 85%);
+    background: hsl(204, 43%, 93%);
     font-family: 'Karla', sans-serif;
     font-size: 16px;
 }
@@ -50,34 +50,52 @@ html {
         /***  site defaults ***/
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.1rem;
     font-weight: 700;
+    padding-bottom: 20px
 }
 
 h2 {
     font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 18px
+
 }
 
 p {
-    font-size: 16px;
+    font-size: 1.2rem;
 }
 
 ul {
     list-style-type: none;
+  
 }
 
        /***  Shell ***/
 
-.card {
-    max-width: 1000px;
-    margin: 8% auto;
 
+.card {
+    max-width: 900px;
+    margin: 10% auto;
+    display: flow-root;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+    /*** Used One True Layout Method for equal column height ***/
+
+#one-true { overflow: hidden;}
+
+#one-true .col {
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
 }
 
 
        /***  Layout ***/
 
-header {
+.header {
     background: #FFF;
     width: 100%;
     padding: 5%;
@@ -87,21 +105,86 @@ header {
     background: hsl(179, 62%, 43%);
     width: 50%;
     padding: 5%;
+    float: left;
 }
 
 .aside {
-    background: hsl(179, 62%,48%);
+    background: hsl(179, 62%,43%);
+    opacity: 0.8;
     width: 50%;
     padding: 5%;
+    float: right;
 }
 
 
        /***  Sections ***/
 
        /*** Header ***/
+       
+.header h1 {
+    color: hsl(179, 62%, 43%);
+    margin-top: 20px;
+}
 
+.header h2 {
+    color: hsl(71, 73%, 54%);
+}
+
+.header p {
+    color: hsl(218, 22%, 67%);
+    line-height: 25px;
+    letter-spacing: 1px;
+
+}
 
        /*** Section ***/
 
+section {
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+.dollar-tag {
+    color: hsl(204, 43%, 82%);
+}
+
+.dollar-tag em {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.button {
+    display: inline-block;
+    width: 90%;
+    padding: 4%;
+    background: hsl(71, 73%, 54%);
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 700;
+    color: #FFF;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 20px 0 50px 0;
+}
+
 
        /*** Aside ***/
+
+.aside {
+    color: #fff;
+}
+
+aside li {
+    font-size: inherit;
+    color: hsl(204, 43%, 88%);
+    line-height: 23px;
+    letter-spacing: 1px;
+
+}

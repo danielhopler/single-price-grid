@@ -161,7 +161,7 @@ section p {
 .button {
     display: inline-block;
     width: 88%;
-    padding: 6% 2%;
+    padding: 5% ;
     background: hsl(71, 73%, 54%);
     font-family: inherit;
     font-size: inherit;
@@ -171,7 +171,7 @@ section p {
     border: none;
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin: 10% 0 0 0;
+    margin: 10% 0 10% 0;
 }
 
 
@@ -179,7 +179,6 @@ section p {
 
 .aside {
     color: #fff;
-    
 }
 
 aside ul {

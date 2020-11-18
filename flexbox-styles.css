@@ -1,0 +1,98 @@
+/******** Table of Contents 
+
+    1. Reset styles
+    2. Defaults
+    3. Global Styles
+    4. Shell
+    5. Layout
+    6. Section-specific
+
+*********/
+
+/*=== 1. Reset styles ===*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/*=== 2. Global Styles ===*/
+
+body {
+    background-color: hsl(218, 22%, 67%);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*=== 3. Defaults ===*/
+
+h1 {
+    
+}
+
+/*=== 4. Shell ===*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 10% auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    background: #FFF;    
+}
+
+/*=== 5. Layout ===*/
+
+.container > * {
+    padding: 4%;
+}
+
+header {
+    flex: 1 0 100%;
+    background: #FFF;
+}
+
+section {
+    flex: 1 0 40%;
+    background: hsl(179, 62%, 43%);
+}
+
+aside {
+    flex: 1 0 40%;
+    background: hsl(179, 62%, 43%);
+    opacity: 0.8;
+}
+

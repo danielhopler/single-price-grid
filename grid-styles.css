@@ -1,0 +1,138 @@
+/* 
+I've used this challenge to to style with float, flexbox, and grid css techniques. Currently in use is the flexbox styling.
+
+    Table of Contents :
+    1. reset - Eric Meyer's variant
+    2. global styles - font-family, font-size
+    3. site defaults - basic tags, headings, links, etc.
+    4. Shell - styles out layer of page - ( in this case, the .card container
+    5. Layout - page layout top down
+    6. Sections - individual elements top down
+*/
+
+/*=== 1. Reset styles ===*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: base
+}
+
+/*=== 2. global styles ===*/
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background:  hsl(218, 22%, 67%, 0.8);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+ul { list-style: none;}
+
+a {text-decoration: none;}
+
+button { border: none;}
+
+/*=== 3. site defaults ===*/
+
+h1 {
+    padding-bottom: 25px;
+    font-size: 1.9em;
+    font-weight: 700;
+}
+
+h3 {
+    padding-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+p {
+    padding-bottom: 0;
+    font-size: 1.2em;
+    line-height: 30px;
+}
+
+
+/*=== 4. shell  ===*/
+
+.container {
+    max-width: 800px;
+    margin: 7% auto;
+    box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/*=== 5. layout  ===*/
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "section aside";    
+}
+
+.header { grid-area: header; }
+.section { grid-area: section; }
+.aside { grid-area: aside; }
+
+
+.container > *{
+    padding: 45px 0 45px 45px;
+    
+}
+
+header {
+    background-color: #FFF;
+}
+
+section {
+    background: hsl(179, 62%, 43%);
+    color: #FFF;
+}
+
+aside {
+    background-color: hsl(179, 62%, 43%, 0.6);
+    color: #FFF;
+}
+
+
+/*=== 6. Section-specific ===*/
+
+.header h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+.header h3 {
+    color: hsl(71, 73%, 54%);
+}
+
+.header p {
+    color: hsl(218, 22%, 67%);
+}
+
+

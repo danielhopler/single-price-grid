@@ -1,8 +1,8 @@
 /******** Table of Contents 
 
     1. Reset styles
-    2. Defaults
-    3. Global Styles
+    2. Global Styles
+    3. Defaults
     4. Shell
     5. Layout
     6. Section-specific
@@ -151,20 +151,21 @@ section p {
     margin-top: 8%;
     padding: 5%;
     background: hsl(71, 73%, 54%);
-    border: none;
+    border: 0;
     box-shadow: 1px 2px 3px 2px rgba(0, 0, 0, 0.1);
     transition: 0.3;
     border-radius: 8px;
     color: #FFF;
     font-weight: 700;
     text-align: center;
+    outline: none;
 }
 
-    /* Button Hover State - Scale */
+    /* Button Hover and Active State - Scale */
 
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.1); }
-
+.button:active { transform: scale(1.2); }
 
     /* Aside */
 aside h3 {

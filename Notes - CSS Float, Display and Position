@@ -39,6 +39,8 @@ Float
             clear: both;
         }
 
+        /** The above method is becoming outdated due to 'display: flow-root'
+
  Position
  - used to arrange position relative to its current position, its containing element, or browser viewport.
 
